@@ -1,0 +1,12 @@
+controllers: { shape: 'package'}
+models: { shape: 'package'}
+utilities: { shape: 'package'}
+app: { shape: 'package'}
+
+
+app -> controllers
+
+controllers -> models
+controllers -> utilities
+
+models -> utilities
