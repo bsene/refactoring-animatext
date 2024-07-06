@@ -1,5 +1,5 @@
-import DomElementModel from "../javascript/models/dom_element.js";
-import TextModel from "../javascript/models/text.js";
+import DomElementModel from "../models/dom_element.js";
+import TextModel from "../models/text.js";
 import CharController from "./char.js";
 
 class TextController {

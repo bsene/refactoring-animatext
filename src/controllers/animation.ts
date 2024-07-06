@@ -1,6 +1,6 @@
-import DomElementModel from "../javascript/models/dom_element.js";
-import TextModel from "../javascript/models/text.js";
-import { sleep } from "../javascript/utilities/sleep.js";
+import { sleep } from "../utilities/sleep.js";
+import DomElementModel from "../models/dom_element.js";
+import TextModel from "../models/text.js";
 import TextController from "./text.js";
 
 export class AnimationController {

@@ -1,6 +1,6 @@
-import DomElementModel from "../javascript/models/dom_element.js";
-import RandomCharModel from "../javascript/models/random_char.js";
-import { sleep } from "../javascript/utilities/sleep.js";
+import { sleep } from "../utilities/sleep.js";
+import DomElementModel from "../models/dom_element.js";
+import RandomCharModel from "../models/random_char.js";
 
 class CharController {
   private animationEnd: unknown;

@@ -1,5 +1,5 @@
 import AnimationController from "./controllers/animation.js";
-import TextModel from "./javascript/models/text.js";
+import TextModel from "./models/text.js";
 
 const asTextModel = (s: string) => new TextModel(s);
 const animationController = new AnimationController(
