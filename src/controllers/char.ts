@@ -2,7 +2,7 @@ import { sleep } from "../utilities/sleep.js";
 import DomElementModel from "../models/dom_element.js";
 import RandomCharModel from "../models/random_char.js";
 
-class CharController {
+export default class CharController {
   private animationEnd: unknown;
   private randomChar: RandomCharModel | null;
   private charCount: number;
@@ -53,5 +53,3 @@ class CharController {
     return sleep(20, galette);
   };
 }
-
-export default CharController;

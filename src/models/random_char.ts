@@ -1,6 +1,6 @@
 import { randomInt } from "../utilities/math.js";
 
-class RandomCharModel {
+export default class RandomCharModel {
   public char: string;
   constructor() {
     this.char = this.generateRandomChar();
@@ -11,5 +11,3 @@ class RandomCharModel {
   #generateRandomCharCode = ({ maxNum }: { maxNum: number }) =>
     randomInt(maxNum) + 32;
 }
-
-export default RandomCharModel;

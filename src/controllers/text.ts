@@ -2,7 +2,7 @@ import DomElementModel from "../models/dom_element.js";
 import TextModel from "../models/text.js";
 import CharController from "./char.js";
 
-class TextController {
+export default class TextController {
   private charController: CharController | null;
   private charCount: number;
   constructor(
@@ -32,5 +32,3 @@ class TextController {
     }
   };
 }
-
-export default TextController;

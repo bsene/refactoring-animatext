@@ -3,7 +3,7 @@ import DomElementModel from "../models/dom_element.js";
 import TextModel from "../models/text.js";
 import TextController from "./text.js";
 
-export class AnimationController {
+export default class AnimationController {
   private domElement: DomElementModel;
   private textController: TextController | null;
   private animationCount: number;
@@ -32,5 +32,3 @@ export class AnimationController {
     return this.animationsLoop();
   };
 }
-
-export default AnimationController;
