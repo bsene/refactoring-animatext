@@ -1,7 +1,7 @@
 import { getDomElement, insertDomElement } from "../utilities/dom_elements.js";
 
 export default class DomElementModel {
-  private domElementBody: Element | null;
+  private domElementBody: HTMLElement | null;
   private elementToInsertLetterIn: HTMLElement | null;
   constructor({ tag }: { tag: string }) {
     this.domElementBody = getDomElement(tag);

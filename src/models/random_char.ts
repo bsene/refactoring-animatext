@@ -6,8 +6,6 @@ export default class RandomCharModel {
     this.char = this.generateRandomChar();
   }
   generateRandomChar = () => {
-    return String.fromCharCode(this.#generateRandomCharCode({ maxNum: 97 }));
+    return String.fromCharCode(randomInt(97) + 32);
   };
-  #generateRandomCharCode = ({ maxNum }: { maxNum: number }) =>
-    randomInt(maxNum) + 32;
 }

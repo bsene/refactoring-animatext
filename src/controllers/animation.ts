@@ -3,6 +3,10 @@ import DomElementModel from "../models/dom_element.js";
 import TextModel from "../models/text.js";
 import TextController from "./text.js";
 
+const asTextModel = (s: string) => new TextModel(s);
+export const animationFactory = (t: string[], nbOfChars?: number) =>
+  new AnimationController(t.map(asTextModel), nbOfChars);
+
 export default class AnimationController {
   private domElement: DomElementModel;
   private textController: TextController | null;
