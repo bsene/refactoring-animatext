@@ -1,7 +1,9 @@
-import AnimationController from "./controllers/animation_controller.js"
+import AnimationController from "./controllers/animation.js";
+import TextModel from "./javascript/models/text.js";
 
-const animationController = new AnimationController({
-  texts: [
+const asTextModel = (s: string) => new TextModel(s);
+const animationController = new AnimationController(
+  [
     "In a quiet room, under the soft moon's gleam",
     "Sat a Jeep named Jeep, lost in a musical dream.",
     "His fingers, like steel, struck the keys with might",
@@ -10,13 +12,13 @@ const animationController = new AnimationController({
     "He yearned for melodies, gentle and sweet",
     "But his heavy hands made the keys retreat.",
     "Rolling over the chords in a clumsy spree",
-    "Rolling over the notes, setting chaos free."
-  ],
-  numberOfAnimationCharsForCharacter: 1,
-})
-animationController.animationsLoop()
-const animationController2 = new AnimationController({
-  texts: [
+    "Rolling over the notes, setting chaos free.",
+  ].map(asTextModel),
+  1,
+);
+animationController.animationsLoop();
+const animationController2 = new AnimationController(
+  [
     "In a quiet room, under the soft moon's gleam",
     "Sat a Jeep named Jeep, lost in a musical dream.",
     "His fingers, like steel, struck the keys with might",
@@ -25,8 +27,7 @@ const animationController2 = new AnimationController({
     "He yearned for melodies, gentle and sweet",
     "But his heavy hands made the keys retreat.",
     "Rolling over the chords in a clumsy spree",
-    "Rolling over the notes, setting chaos free."
-  ],
-  numberOfAnimationCharsForCharacter: 30,
-})
-animationController2.animationsLoop()
+    "Rolling over the notes, setting chaos free.",
+  ].map(asTextModel),
+);
+animationController2.animationsLoop();
